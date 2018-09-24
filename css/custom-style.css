@@ -44,9 +44,29 @@ h2{
 p{
   font-size: 2em;
 }
+/*button*/
+button.btn{
+  padding: 1em 2em 1em;
+  color:white;
+  background-color: #2D3E51 ;
 
+}
+button.btn:hover{
+  color:white;
+   background-color:#303740 ;
+}
 section{
-  padding:10em 0 20px;
+  padding:10em 0 5em;
+  background-color: #EFEFEF ;
+}
+section#social-profile{
+  background-color: #FFFFFF ;
+}
+section#social-profile a{
+ padding: 0px 2em 0px;
+}
+section#portfolio{
+  background-color: #FFFFFF;
 }
 
 .v-header{
@@ -126,8 +146,8 @@ section{
 
 .header-content h1{
   position: center;
-  font-size: 7.5em;
-  font-weight: 100;
+  font-size: 5em;
+  font-weight: 80;
   margin: 0;
   line-height: 1;
 }
@@ -141,10 +161,13 @@ section{
 
 }
 
+/*skill*/
+.progress{
+  height: 25px;
+}
 
 
-
-/*education*/
+/*Background*/
 .education-box{
       background: #fff;
     padding: 20px;
@@ -185,19 +208,19 @@ section{
       padding: 10px;
   }
   .navbar .navbar-brand {
-    background: url(../asset/logo-nav.png) center / contain no-repeat;
+    background: url(../asset/logo-nav-white.png) center / contain no-repeat;
     width: 200px;
   }
    .navbar-nav li a span{
        color: #FFFFFF ;       
    }
   .navbar-nav li a:hover span, .navbar-nav li.active a span{
-      color: #1E94CC;
+      color: grey;
       -webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */
       transition: all 0.2s;
   }
   li.active{
-     color: #1E94CC;
+     color: grey;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -220,6 +243,13 @@ section{
   }
    .affix .navbar-nav li a span{
     color:grey;
+  }
+   .affix .navbar-nav li a span:hover{
+    color:black;
+  }
+   .affix .navbar-header .navbar-brand {
+    background: url(../asset/logo-nav-black.png) center / contain no-repeat;
+    width: 200px;
   }
 
 
@@ -248,17 +278,38 @@ section{
 
 
 
-
-
-
-
 /*Form*/
+
+.location .location1{
+  padding-top: 1em;
+}
+.location .location1 i.fa-lg{
+    height: 2em;
+    width: 2em;
+    background: #fec608;
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #fec608;
+    line-height: 2em;
+    transition: all 400ms linear 0s;
+}
+.location .location2{
+  padding-top: 1em;
+}
+.location .location2 p{
+  line-height: 20px;
+  font-size:1.5em;
+}
+.contact .location2 p.header-locate{
+  font-size:1.8em;
+}
 .contact-form .help-block{
   color:#1c8e16;
   font-weight: 3em;
 }
-@media screen and (max-width: : 320px){ #rc-imageselect, .g-recaptcha {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;} }
-#rc-imageselect {transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;} 
+
 #msgerr{
   color:red;
 }
@@ -299,18 +350,18 @@ footer.page-footer {
   }
     
   
-    footer.page-footer .line2 p {
+    footer.page-footer .text-footer p {
    
-    
+    text-align: center;
     font-size: 14px;
     
   }
-   footer.page-footer .line2 p a{
+   footer.page-footer .text-footer p a{
    
     color:#1E94CC;
     
   }
-     footer.page-footer .line2 p a:hover{
+     footer.page-footer .text-footer p a:hover{
    
     color:#32b3ef;
     
@@ -318,7 +369,7 @@ footer.page-footer {
   /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 617px){
 
-     footer.page-footer .line2 p {
+     footer.page-footer .text-footer p {
   
         display: block;
         padding: 20px 0 20px;

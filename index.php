@@ -10,7 +10,7 @@ include("header.php");
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Nav -->
        <nav id="nav" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="100"> 
@@ -27,7 +27,7 @@ include("header.php");
               <ul id="ul-nav" class="nav navbar-nav navbar-right">
                 <li><a class="navlink" href="#about"><span>ABOUT ME</span></a></li>
                 <li><a class="navlink" href="#skill"><span>SKILL</span></a></li>
-                <li><a class="navlink" href="#education"><span>EDUCATION</span></a></li>
+                <li><a class="navlink" href="#background"><span>BACKGROUND</span></a></li>
                 <li><a class="navlink" href="#portfolio"><span>PORTFOLIO</span></a></li>
                 <li><a class="navlink" href="#contact"><span>CONTACT</span></a></li>
               </ul>
@@ -48,9 +48,9 @@ include("header.php");
     </div>
      <div class="header-overlay"></div>
           <div class="header-content">
-               <h1>Phatcharapol T.</h1>
-                <h3>Web Developer from Thailand</h3> 
-          <a href="#portfolio" class=""><button type="button" class="btn">View More</button></a>
+               <h1>Hey,I'm Phatcharapol</h1>
+                <h3>Web Developer</h3> 
+          <a href="cv/resume.pdf" download><button type="button" class="btn">DOWNLOAD MY RESUME-CV</button></a>
           </div>
 
       
@@ -61,7 +61,7 @@ include("header.php");
 <section id="about">
      <div class="container about">
         <h2>ABOUT ME</h2>
-        
+         <br>
           <div class="col-md-7" style="text-align: left">
             <p>I’m 22 years old graphic designer and product creator
                 from the cozy city “Phetchabun”. I have four months
@@ -81,11 +81,23 @@ include("header.php");
     
 </section>
 
+<section id="social-profile" style="padding: 3em 0px 3em;align-items: center;">
+     <div class="container social-profile">        
+          
+         <a id="link" href="https://www.facebook.com/phatcharapol.nut/"> <img class="social-img" src="asset/fb.png"> </a>
+         <a id="link" href="https://www.instagram.com/nnnnut.pt/"> <img class="social-img" src="asset/ig.png"> </a>
+         <a id="link" href="https://www.facebook.com/phatcharapol.nut/"> <img class="social-img" src="asset/twitter.png"> </a> 
+         <a id="link" href="https://github.com/phatcharapol"> <img class="social-img" src="asset/github.png"> </a>
+         <a id="link" href="http://line.me/ti/p/~nuttsna"> <img class="social-img" src="asset/line.png"> </a>
+          <h2 style="float:right;line-height: 12px">My Social Profile</h2>
+    </div>
+</section>
+
 
 <section id="skill">
-     <div class="container skill">
+     <div class="container skill education-box">
         <h2>MY SKILL</h2>
-        <br><br>
+        <br>
            <div class="col-md-6 col-xs-12">
                    <div class="skill_text">
                                 <h4>Front-End Skill</h4>
@@ -171,16 +183,36 @@ include("header.php");
       </div>
 </section>
 
-<section id="education">
-     <div class="container education">
+<section id="background">
+     <div class="container background">
         <h2>EDUCATION</h2>
-        <br><br>
-        <p class="content">PHATCHARAPOL TRIDECHEE [NUT] </p>
-        <p class="content">I’m 22 years old graphic designer and product creator
-          from the cozy city “Phetchabun”. I have four months
-          of work experience with Plan toys. I love to draw with
-          a cup of tea and beautiful song. </p>  
-          <a href="#portfolio" class=""><button type="button" class="btn">View More</button></a>
+        <br>
+        <div class="education-box">
+            <p>2013-2017 </p>
+            <p>Bachelor’s Degree</p>
+            <p>King Mongkut's University of Technology North Bangkok</p>
+        </div>
+        <div class="education-box">
+            <p>2010-2013 </p>
+            <p>High School</p>
+            <p>Satriwittaya 2</p>
+        </div>
+          <div class="education-box">
+            <p>2007-2010 </p>
+            <p>Junior High School</p>
+            <p>Satriwittaya 2</p>
+        </div>
+
+        <h2>WORK EXPERIENCE</h2>
+        <br>
+        <div class="education-box">
+            <p>2017-Present </p>
+            <p>Web Developer[Back-End]</p>
+            <p>IT Element Co.,Ltd</p>
+        </div>
+    
+       
+        
       </div>
 </section>
 
@@ -218,20 +250,37 @@ include("header.php");
 
    <!-- Section Contact US -->
    <section id="contact">
-        <div class="container contact">
+        <div class="container contact education-box">
           <h2>CONTACT US</h2>
               <div class="col-md-6">
                 <h3>Contact Info </h3>
                <iframe id="map" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?q=%E0%B8%AB%E0%B8%88%E0%B8%81.%20%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B8%9B%20%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%20Phahon%20Yothin%2048%20Alley%2C%20Lane%2060%2C%20Tha%20Raeng%2C%20Bang%20Khen%2C%20Bangkok&key=AIzaSyAiOaOaOqtypn-v_8FVNIoh2fFsUNYJ4_4" allowfullscreen></iframe>
-            <div class="location">
-               <p><span><i class="fas fa-map-marker-alt fa-lg"></i></span> 43 Soi Paholyothin 48 Tharang Bangkhen Bangkok 10220</p>      
-               <p><span><i class="fas fa-mobile-alt fa-lg"></i></span>  089-407-7868</p>
-               <p><span><i class="fas fa-envelope fa-lg"></i></span>  nuttt.x3@gmail.com</p>   
-             <!--   <p><i class="fab fa-facebook-square"></i><a id="link" href="https://www.facebook.com/Thongpratheepmahinenery/"> facebook.com/ThongpratheepMahinenery </a></p>
-               <p><i class="fab fa-line"></i><a id="link" href="http://line.me/ti/p/~nuttsna"> @tpmlp</a></p> -->
-    
-            </div>
+                <div class="location">
+                    <div class="location1 col-md-2">
+                        <span><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                    </div>
+                    <div class="location2 col-md-10">
+                        <p class="header-locate">ADRESS</p>
+                        <p>43 Soi Paholyothin 48 Tharang Bangkhen Bangkok 10220</p> 
+                    </div> 
+               
+                    <div class="location1 col-md-2"> 
+                       <span><i class="fas fa-mobile-alt fa-lg"></i></span>
+                    </div>
+                   <div class="location2 col-md-10">
+                       <p class="header-locate">CELL PHONE</p>
+                       <p>089-407-7868</p>
+                   </div>
+          
+                   <div class="location1 col-md-2"> 
+                       <span><i class="fas fa-envelope fa-lg"></i></span>
+                   </div>
+                   <div class="location2 col-md-10">
+                       <p class="header-locate">EMAIL</p>
+                       <p>nuttt.x3@gmail.com</p> 
+                   </div>             
+                </div>
                
             </div>
             
@@ -257,17 +306,17 @@ include("header.php");
                       </div>
 
                       <div class="form-group">
-                          <textarea class="form-control" type="textarea" id="messages" name="messages" placeholder="Messages" maxlength="500" rows="10"></textarea>                         
+                          <textarea class="form-control" type="textarea" id="messages" name="messages" placeholder="Messages" maxlength="500" rows="5"></textarea>                         
                       </div>
                       <div align="center">
                       <div class="g-recaptcha" data-sitekey="6LdX-m0UAAAAAJ_8P99WgXfSYuZKIv7G-wn8jyQv" ></div>
                       </div>
 
                         <br>
-                    <center><button type="submit" name="submit" class="btn">Send</button></center>
+                    <center><button type="submit" name="submit" class="btn">Send Messages</button></center>
 
                     </form>
-                      <span class="help-block"><p id="characterLeft" class="help-block ">***I'll get back soon !!</p></span> 
+                     <!--  <span class="help-block"><p id="characterLeft" class="help-block ">***I'll get back soon !!</p></span>  -->
                       <div id="msgerr"></div>
                 </div>
 
@@ -291,7 +340,7 @@ include("header.php");
                 <p> <a id="link" href="https://www.facebook.com/phatcharapol.nut/"> <img class="img-follow" src="asset/icon/icon-fb.png">  PHATCHARAPOL</a> </p>
                 <p><a id="link" href="http://line.me/ti/p/~nuttsna"><img class="img-follow" src="asset/icon/icon-line.png"> @PHATCHARAPOL</a></p>
             </div> -->
-            <div class="line2">
+            <div class="text-footer">
                 <p>PHATCHARAPOL-CV ©2018 All rights reserved | Powered by<a href="https://www.facebook.com/phatcharapol.nut"> PHATCHARAPOL T.</a></p>
             </div>
        
