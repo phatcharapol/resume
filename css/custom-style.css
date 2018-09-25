@@ -63,8 +63,9 @@ section#social-profile{
   background-color: #FFFFFF ;
 }
 section#social-profile a{
- padding: 0px 2em 0px;
+ padding: 0px 1em 0px;
 }
+
 section#portfolio{
   background-color: #FFFFFF;
 }
@@ -139,7 +140,7 @@ section#portfolio{
 }
 
 .header-content{
-    padding-left:1rem;
+  padding-left:1rem;
   padding-right:1rem;
   z-index:2;
 }
@@ -160,7 +161,16 @@ section#portfolio{
   padding-bottom:2rem;
 
 }
-
+.header-bottom{
+  z-index: 2 ;
+  bottom: 5%;
+  left:45%;
+  position:absolute;
+}
+img.arrow-down{
+  height: 80px;
+  width: 80px;
+}
 /*skill*/
 .progress{
   height: 25px;
@@ -184,6 +194,38 @@ section#portfolio{
 .item-portfolio{
   box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.75);
   border-radius: 15px 15px 15px 15px;
+  position: relative;
+}
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-fluid.img-thumbnail{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.item-portfolio:hover .img-fluid.img-thumbnail {
+  opacity: 0.3;
+}
+
+.item-portfolio:hover .overlay {
+  opacity: 1;
+}
+.text-overlay{
+   background-color: #2D3E51;
+  color: white;
+  font-size: 1.2em;
+  padding: 16px 32px 16px;
 }
 .portfolio-description {
     padding: 5px;
@@ -267,12 +309,20 @@ section#portfolio{
   }
  @media only screen and (max-width: 767px){
  .navbar {
-    background: #23292c;
+    background-color:white;
     padding: 10px 0;
+    color:grey;
  
   }
+   .navbar-nav li a span{
+      color:grey;      
+   }
+  .navbar .navbar-brand {
+    background: url(../asset/logo-nav-black.png) center / contain no-repeat;
+    width: 200px;
+  }
  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color:#83858a7d;
+    background-color:rgba(0, 0, 0, 0);
   }
 }
 
@@ -286,12 +336,12 @@ section#portfolio{
 .location .location1 i.fa-lg{
     height: 2em;
     width: 2em;
-    background: #fec608;
-    color: black;
+    background: #303740;
+    color: white;
     font-size: 3em;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #fec608;
+    border: 1px solid #303740;
     line-height: 2em;
     transition: all 400ms linear 0s;
 }
@@ -366,6 +416,20 @@ footer.page-footer {
     color:#32b3ef;
     
   }
+@media only screen and (max-width:767px ){
+  section#social-profile .col-md-4{
+    display: none;
+  }
+  section#social-profile .col-md-8{
+    text-align: center;
+  }
+  section#social-profile a{
+   padding: 0px 0.4em 0px;
+  }
+  section#contact .contact-form{
+   padding-top: 2em;
+  }
+}
   /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 617px){
 

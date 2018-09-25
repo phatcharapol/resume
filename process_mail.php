@@ -69,9 +69,9 @@ $mail->Password = "tpmlp11027";
 //Set who the message is to be sent from
 $mail->setFrom('tpmlp.service@gmail.com',$email);
 //Set who the message is to be sent to
-$mail->addAddress('tpmlp.work@gmail.com','Inbox Job TPMLP');
+$mail->addAddress('nuttt.x3@gmail.com','Messages from www.phatcharapol-cv.com');
 //Set the subject line
-$mail->Subject = 'www.tpm-machinery.com';
+$mail->Subject = 'www.phatcharapol-cv.com';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('content.html'), dirname(__FILE__));

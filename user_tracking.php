@@ -38,7 +38,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     mysqli_close($conn);
-    // mysql_query("INSERT INTO `database`.`table` (IP) VALUES ('$ip')");
+    
 
 
   }	

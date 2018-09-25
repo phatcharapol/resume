@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-
+new WOW().init();
 // Scroll Animat
 $( "a.navlink" ).click(function( event ) {
         event.preventDefault();
