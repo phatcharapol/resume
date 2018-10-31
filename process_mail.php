@@ -55,7 +55,7 @@ $mail->SMTPDebug = 0;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host =  gethostbyname('smtp.gmail.com');
+$mail->Host =  'smtp.gmail.com';
 //Set the SMTP port number - likely to be 25, 465 or 587
 $mail->Port =587;
 //Set the encryption system to use - ssl (deprecated) or tls
